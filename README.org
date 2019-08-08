@@ -1,0 +1,9 @@
+Tools for working with the receipt data retrievable from [[https://www.trumf.no/personvern/bestill-innsyn][trumf.no]]
+
+~tocsv.py~: Convert the json dump to csv (use stdin and stdout)
+
+Use eg. [[https://github.com/dinedal/textql][textql]] to convert the resulting text file to a sqlite database:
+
+#+BEGIN_SRC shell
+textql -header -save-to transactions.sqlite transactions.csv
+#+END_SRC
